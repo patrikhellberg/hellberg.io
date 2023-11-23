@@ -31,7 +31,7 @@ export default function Home() {
   const containerClasses = 'max-w-[816px] mx-auto p-4'
   return (
     <div className='min-h-screen'>
-      <header className='bg-white fixed w-full h-16 shadow-md'>
+      <header className='bg-white fixed z-10 w-full h-16 shadow-md'>
         <div
           className={`${containerClasses} flex justify-between items-center`}
         >
