@@ -2,7 +2,7 @@ import { h1, h2, h3 } from '@/utils/sharedStyles'
 import Check from './Check'
 import Icon from './Icon'
 import AnchorHeader from './AnchorHeader'
-import { downloadCV } from '@/actions/downloadCV'
+import PDFButton from './PDFButton'
 
 type YearMonth =
   | {
@@ -126,7 +126,10 @@ const dateString = (yearMonth: YearMonth): string => {
 const CVSection = () => {
   return (
     <div className='mb-16'>
-      <AnchorHeader id='cv' text='CV' classes={`${h1} mb-4`} />
+      <div className='flex gap-4 items-end mb-4'>
+        <AnchorHeader id='cv' text='CV' classes={`${h1}`} />
+        <PDFButton />
+      </div>
       <h2 className={`${h2} mb-2`}>Experience</h2>
       {experiences.map((experience) => (
         <div
