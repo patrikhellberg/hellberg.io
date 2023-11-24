@@ -2,6 +2,7 @@ import { h1, h2, h3 } from '@/utils/sharedStyles'
 import Check from './Check'
 import Icon from './Icon'
 import AnchorHeader from './AnchorHeader'
+import { downloadCV } from '@/actions/downloadCV'
 
 type YearMonth =
   | {
