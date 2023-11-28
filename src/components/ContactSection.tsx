@@ -9,7 +9,7 @@ type ContactItem = {
   icon?: IconName
 }
 
-const contactItems: ContactItem[] = [
+export const contactItems: ContactItem[] = [
   {
     link: 'mailto:patrik@hellberg.io',
     text: 'patrik@hellberg.io',
