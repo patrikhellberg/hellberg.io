@@ -2,7 +2,6 @@ import { h1, h2, h3 } from '@/utils/sharedStyles'
 import Check from './Check'
 import Icon from './Icon'
 import AnchorHeader from './AnchorHeader'
-import PDFButton from './PDFButton'
 
 type YearMonth =
   | {
@@ -28,7 +27,7 @@ type Education = {
   skills?: string[]
 }
 
-const experiences: Experience[] = [
+export const experiences: Experience[] = [
   {
     title: 'Frontend developer',
     company: 'SGDS Gruppen AB',
@@ -79,7 +78,7 @@ const experiences: Experience[] = [
   },
 ]
 
-const education: Education[] = [
+export const education: Education[] = [
   {
     title: 'Certified Scrum Master',
     institution: 'Crisp / Scrum Alliance',
@@ -117,18 +116,30 @@ const months = [
   'december',
 ]
 
-const dateString = (yearMonth: YearMonth): string => {
+export const dateString = (yearMonth: YearMonth): string => {
   if (yearMonth === 'current') return 'current'
   const { year, month } = yearMonth
   return `${year} ${months[month - 1]}`
 }
 
+const pdfLink =
+  process.env.NODE_ENV === 'production'
+    ? 'https://cv.hellberg.io'
+    : 'http://localhost:9999/.netlify/functions/cv'
+
 const CVSection = () => {
   return (
     <div className='mb-16'>
-      <div className='flex gap-4 items-end mb-4'>
+      <div className='flex items-end mb-4'>
         <AnchorHeader id='cv' text='CV' classes={`${h1}`} />
-        <PDFButton />
+        <a
+          href={pdfLink}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='underline ml-2'
+        >
+          Download as PDF
+        </a>
       </div>
       <h2 className={`${h2} mb-2`}>Experience</h2>
       {experiences.map((experience) => (
