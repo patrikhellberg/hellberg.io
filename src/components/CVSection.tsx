@@ -124,7 +124,7 @@ export const dateString = (yearMonth: YearMonth): string => {
 
 const pdfLink =
   process.env.NODE_ENV === 'production'
-    ? 'https://cv.hellberg.io'
+    ? 'https://hellberg-io.netlify.app/.netlify/functions/cv'
     : 'http://localhost:9999/.netlify/functions/cv'
 
 const CVSection = () => {

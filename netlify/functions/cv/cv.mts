@@ -35,6 +35,11 @@ export const handler: Handler = async (event) => {
           })
           doc.moveDown(0.3)
         })
+        doc.fontSize(12).text('hellberg.io', {
+          link: 'https://hellberg.io',
+          underline: true,
+        })
+        doc.moveDown(0.3)
         doc.moveDown(2)
         doc.x = doc.page.margins.left
         doc
