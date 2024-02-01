@@ -32,12 +32,15 @@ export const experiences: Experience[] = [
     title: 'Frontend developer',
     company: 'SGDS Gruppen AB',
     description:
-      'I am working as a frontend developer as a part of a larger team consisting of multiple SCRUM teams. Apart from being a developer I am also the SCRUM-master of the team. The product I am working on is a B2B E-commerce platform.',
+      'Worked as a frontend developer as a part of a larger team consisting of multiple SCRUM teams. Apart from being a developer I was also the SCRUM-master of the team. The product I was working on was a B2B E-commerce platform.',
     start: {
       year: 2022,
       month: 11,
     },
-    end: 'current',
+    end: {
+      year: 2024,
+      month: 1,
+    },
     skills: [
       'Vue',
       'Nuxt',
