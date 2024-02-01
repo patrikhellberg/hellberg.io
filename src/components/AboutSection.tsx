@@ -3,30 +3,32 @@ import AnchorHeader from './AnchorHeader'
 import Header from './Header'
 
 const AboutSection = () => {
-  const age = (bDay: string) => {
-    const birthdateObj = new Date(bDay)
+  const yearsSinceDate = (start: string) => {
+    const startDate = new Date(start)
     const currentDate = new Date()
-    let age = currentDate.getFullYear() - birthdateObj.getFullYear()
+    let yearsSince = currentDate.getFullYear() - startDate.getFullYear()
     if (
-      currentDate.getMonth() < birthdateObj.getMonth() ||
-      (currentDate.getMonth() === birthdateObj.getMonth() &&
-        currentDate.getDate() < birthdateObj.getDate())
+      currentDate.getMonth() < startDate.getMonth() ||
+      (currentDate.getMonth() === startDate.getMonth() &&
+        currentDate.getDate() < startDate.getDate())
     ) {
-      age--
+      yearsSince--
     }
 
-    return age
+    return yearsSince
   }
+
   return (
     <div className='mb-16'>
       <Header />
       <AnchorHeader text='About me' id='about' classes={`${h1} mb-4`} />
       <p className='mb-2'>
-        Hello. I&apos;m a {age('1996-06-17')}-year-old web developer from
-        Sweden. I&apos;ve been working in development for almost 4 years, in
-        roles as a full-stack and frontend developer. JavaScript, TypeScript,
-        React, Vue, NodeJS, and MongoDB are some of my go-to tools for crafting
-        great digital experiences.
+        Hello. I&apos;m a {yearsSinceDate('1996-06-17')}-year-old web developer
+        from Sweden. I&apos;ve been working in development for{' '}
+        {yearsSinceDate('2020-01-01')} years, in roles as a full-stack and
+        frontend developer. JavaScript, TypeScript, React, Vue, NodeJS, and
+        MongoDB are some of my go-to tools for crafting great digital
+        experiences.
       </p>
       <p className='mb-2'>
         I stay motivated by constantly learning new things. It keeps me excited
