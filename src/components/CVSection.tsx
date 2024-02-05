@@ -52,6 +52,8 @@ export const experiences: Experience[] = [
       'Cypress',
       'Contentful',
       'Sentry',
+      'Scrum',
+      'SAFe',
     ],
   },
   {
@@ -77,6 +79,9 @@ export const experiences: Experience[] = [
       'MongoDB',
       'Sanity',
       'Contentful',
+      'Netlify',
+      'Vercel',
+      'Nginx',
     ],
   },
 ]

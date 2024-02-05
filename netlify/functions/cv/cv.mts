@@ -63,7 +63,7 @@ export const handler: Handler = async (event) => {
           doc.moveDown(0.3)
           doc
             .font('Helvetica-Bold')
-            .text('Technologies used: ', { continued: true })
+            .text('Skills used: ', { continued: true })
             .font('Helvetica')
             .text(exp.skills.join(', '))
           doc.moveDown(1.5)
