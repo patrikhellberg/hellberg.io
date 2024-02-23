@@ -92,11 +92,6 @@ export const education: Education[] = [
     institution: 'Crisp / Scrum Alliance',
     year: 2023,
   },
-  // {
-  //   title: 'AWS Certified Cloud Practitioner',
-  //   institution: 'AWS',
-  //   year: 2023,
-  // },
   {
     title: 'Web development 1',
     institution: 'Stockholms University',

@@ -1,11 +1,7 @@
 import AboutSection from '@/components/AboutSection'
 import CVSection from '@/components/CVSection'
 import ContactSection from '@/components/ContactSection'
-// import PortfolioSection from '@/components/PortfolioSection'
-import UnderConstruction from '@/components/UnderConstruction'
 import Link from 'next/link'
-
-const IS_UNDER_CONSTRUCTION = false
 
 const links = [
   {
@@ -16,10 +12,6 @@ const links = [
     text: 'CV',
     href: '/#cv',
   },
-  // {
-  //   text: 'Portfolio',
-  //   href: '/#portfolio',
-  // },
   {
     text: 'Contact',
     href: '/#contact',
@@ -27,7 +19,6 @@ const links = [
 ]
 
 export default function Home() {
-  if (IS_UNDER_CONSTRUCTION) return <UnderConstruction />
   const containerClasses = 'max-w-[816px] mx-auto p-4'
   return (
     <div className='min-h-screen'>
@@ -54,7 +45,6 @@ export default function Home() {
         <div className={`${containerClasses} bg-white rounded`}>
           <AboutSection />
           <CVSection />
-          {/* <PortfolioSection /> */}
           <ContactSection />
         </div>
       </main>
