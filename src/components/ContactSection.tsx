@@ -25,11 +25,11 @@ export const contactItems: ContactItem[] = [
     text: 'LinkedIn',
     icon: 'linkedin',
   },
-  // {
-  //   link: 'https://github.com/bucketmedia',
-  //   text: 'Github',
-  //   icon: 'github',
-  // },
+  {
+    link: 'https://github.com/patrikhellberg',
+    text: 'Github',
+    icon: 'github',
+  },
 ]
 
 const ContactSection = () => {
