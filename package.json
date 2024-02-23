@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hellberg/react-svg-icons": "^1.1.2",
     "next": "14.0.2",
     "pdfkit": "^0.14.0",
     "react": "^18",

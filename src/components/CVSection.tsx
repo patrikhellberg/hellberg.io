@@ -1,10 +1,9 @@
-import Check from '@/components/Check'
-import Icon from '@/components/Icon'
 import AnchorHeader from '@/components/AnchorHeader'
 import { cvLink } from '@/utils/config'
 import { h1, h2, h3 } from '@/utils/sharedStyles'
 import { dateString } from '@/utils/date'
 import { education, experiences } from '@/utils/cvData'
+import SVG, { Check } from '@hellberg/react-svg-icons'
 
 const CVSection = () => {
   return (
@@ -39,7 +38,7 @@ const CVSection = () => {
                 key={`skill_${skill}_${experience.title}`}
                 className='flex gap-px items-center text-sm'
               >
-                <Icon name='check' size={12} />
+                <SVG icon={Check} width={12} />
                 {skill}
               </span>
             ))}
@@ -64,7 +63,7 @@ const CVSection = () => {
                 key={`skill_${skill}_${edu.title}`}
                 className='flex gap-1 items-center'
               >
-                <Check size={16} />
+                <SVG icon={Check} width={16} />
                 {skill}
               </span>
             ))}

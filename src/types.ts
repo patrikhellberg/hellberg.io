@@ -1,3 +1,5 @@
+import { SVGData } from '@hellberg/react-svg-icons'
+
 export type YearMonth =
   | {
       year: number
@@ -27,5 +29,5 @@ export type IconName = 'check' | 'linkedin' | 'github' | 'email' | 'phone'
 export type ContactItem = {
   link: string
   text: string
-  icon?: IconName
+  icon: SVGData
 }

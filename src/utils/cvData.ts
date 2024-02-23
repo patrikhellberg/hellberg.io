@@ -1,4 +1,10 @@
 import type { Experience, Education, ContactItem } from '@/types'
+import {
+  EnvelopeSimple,
+  GithubLogo,
+  LinkedinLogo,
+  Phone,
+} from '@hellberg/react-svg-icons'
 
 export const experiences: Experience[] = [
   {
@@ -96,21 +102,21 @@ export const contactItems: ContactItem[] = [
   {
     link: 'mailto:patrik@hellberg.io',
     text: 'patrik@hellberg.io',
-    icon: 'email',
+    icon: EnvelopeSimple,
   },
   {
     link: 'tel:+46761181414',
     text: '+46 (0) 76 118 14 14',
-    icon: 'phone',
+    icon: Phone,
   },
   {
     link: 'https://www.linkedin.com/in/patrik-hellberg-56133020b/',
     text: 'LinkedIn',
-    icon: 'linkedin',
+    icon: LinkedinLogo,
   },
   {
     link: 'https://github.com/patrikhellberg',
     text: 'Github',
-    icon: 'github',
+    icon: GithubLogo,
   },
 ]

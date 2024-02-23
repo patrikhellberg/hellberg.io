@@ -1,7 +1,7 @@
 import { h1 } from '@/utils/sharedStyles'
 import { contactItems } from '@/utils/cvData'
-import Icon from '@/components/Icon'
 import AnchorHeader from '@/components/AnchorHeader'
+import SVG from '@hellberg/react-svg-icons'
 
 const ContactSection = () => {
   return (
@@ -16,7 +16,7 @@ const ContactSection = () => {
             rel='noreferrer noopener'
             className='flex underline items-center gap-2'
           >
-            <Icon name={item.icon} size={32} />
+            <SVG icon={item.icon} />
             {item.text}
           </a>
         ))}
