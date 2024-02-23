@@ -1,7 +1,6 @@
 {
   "name": "hellberg.io",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "functions": "netlify functions:serve",

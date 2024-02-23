@@ -16,7 +16,7 @@ export const handler: Handler = async (event) => {
         doc.image('./public/portrait-tall.jpeg', {
           fit: [200, 200],
         })
-        doc.moveUp(8.5)
+        doc.moveUp(10.8)
         doc
           .font('Helvetica-Bold')
           .fontSize(22)
