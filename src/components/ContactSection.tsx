@@ -1,36 +1,7 @@
 import { h1 } from '@/utils/sharedStyles'
-import Icon from './Icon'
-import { IconName } from '@/utils/iconData'
-import AnchorHeader from './AnchorHeader'
-
-type ContactItem = {
-  link: string
-  text: string
-  icon?: IconName
-}
-
-export const contactItems: ContactItem[] = [
-  {
-    link: 'mailto:patrik@hellberg.io',
-    text: 'patrik@hellberg.io',
-    icon: 'email',
-  },
-  {
-    link: 'tel:+46761181414',
-    text: '+46 (0) 76 118 14 14',
-    icon: 'phone',
-  },
-  {
-    link: 'https://www.linkedin.com/in/patrik-hellberg-56133020b/',
-    text: 'LinkedIn',
-    icon: 'linkedin',
-  },
-  {
-    link: 'https://github.com/patrikhellberg',
-    text: 'Github',
-    icon: 'github',
-  },
-]
+import { contactItems } from '@/utils/cvData'
+import Icon from '@/components/Icon'
+import AnchorHeader from '@/components/AnchorHeader'
 
 const ContactSection = () => {
   return (

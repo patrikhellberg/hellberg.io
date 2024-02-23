@@ -1,5 +1,6 @@
-import { iconData, IconName } from '@/utils/iconData'
 import { ReactElement } from 'react'
+import { iconData } from '@/utils/iconData'
+import type { IconName } from '@/types'
 
 type Props = {
   color?: string

@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import type { IconName } from '@/types'
 
 let svgPathIndex = 0
 const getKey = () => {
@@ -6,7 +7,6 @@ const getKey = () => {
   return `svgPath_${svgPathIndex}`
 }
 
-export type IconName = 'check' | 'linkedin' | 'github' | 'email' | 'phone'
 export const iconData: {
   [key in IconName]: {
     props: { [key: string]: string | number }

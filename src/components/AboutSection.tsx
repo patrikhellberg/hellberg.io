@@ -1,23 +1,9 @@
 import { h1 } from '@/utils/sharedStyles'
-import AnchorHeader from './AnchorHeader'
-import Header from './Header'
+import { yearsSinceDate } from '@/utils/date'
+import AnchorHeader from '@/components/AnchorHeader'
+import Header from '@/components/Header'
 
 const AboutSection = () => {
-  const yearsSinceDate = (start: string) => {
-    const startDate = new Date(start)
-    const currentDate = new Date()
-    let yearsSince = currentDate.getFullYear() - startDate.getFullYear()
-    if (
-      currentDate.getMonth() < startDate.getMonth() ||
-      (currentDate.getMonth() === startDate.getMonth() &&
-        currentDate.getDate() < startDate.getDate())
-    ) {
-      yearsSince--
-    }
-
-    return yearsSince
-  }
-
   return (
     <div className='mb-16'>
       <Header />

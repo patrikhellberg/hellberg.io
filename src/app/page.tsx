@@ -1,22 +1,8 @@
+import Link from 'next/link'
 import AboutSection from '@/components/AboutSection'
 import CVSection from '@/components/CVSection'
 import ContactSection from '@/components/ContactSection'
-import Link from 'next/link'
-
-const links = [
-  {
-    text: 'About',
-    href: '/#about',
-  },
-  {
-    text: 'CV',
-    href: '/#cv',
-  },
-  {
-    text: 'Contact',
-    href: '/#contact',
-  },
-]
+import { headerLinks } from '@/utils/cvData'
 
 export default function Home() {
   const containerClasses = 'max-w-[816px] mx-auto p-4'
@@ -33,7 +19,7 @@ export default function Home() {
             <h1 className='font-bold text-lg sm:hidden'>PH</h1>
           </Link>
           <div className='flex gap-4'>
-            {links.map((link) => (
+            {headerLinks.map((link) => (
               <Link href={link.href} key={link.href} className='underline'>
                 {link.text}
               </Link>

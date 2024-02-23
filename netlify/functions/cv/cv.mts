@@ -1,11 +1,7 @@
 import PDFKit from 'pdfkit'
 import type { Handler } from '@netlify/functions'
-import {
-  experiences,
-  education,
-  dateString,
-} from '../../../src/components/CVSection'
-import { contactItems } from '../../../src/components/ContactSection'
+import { experiences, education, contactItems } from '../../../src/utils/cvData'
+import { dateString } from '../../../src/utils/date'
 
 export const handler: Handler = async (event) => {
   if (event.httpMethod !== 'GET')
