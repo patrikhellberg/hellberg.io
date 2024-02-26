@@ -10,6 +10,10 @@ export const handler: Handler = async (event) => {
       statusCode: 405,
     }
   try {
+    const filteredContactItems = contactItems.filter(
+      (item) => item.text !== 'Source'
+    )
+
     const createPdf = (): Promise<string> => {
       return new Promise((resolve) => {
         const doc = new PDFKit()
@@ -24,7 +28,7 @@ export const handler: Handler = async (event) => {
         doc.moveDown(0.5)
         doc.font('Helvetica').fontSize(18).text('Contact information')
         doc.moveDown(0.3)
-        contactItems.forEach((item) => {
+        filteredContactItems.forEach((item) => {
           doc.fontSize(12).text(item.text, {
             link: item.link,
             underline: true,

@@ -1,6 +1,7 @@
 import type { Experience, Education, ContactItem } from '@/types'
 import {
   EnvelopeSimple,
+  GitBranch,
   GithubLogo,
   LinkedinLogo,
   Phone,
@@ -118,5 +119,10 @@ export const contactItems: ContactItem[] = [
     link: 'https://github.com/patrikhellberg',
     text: 'Github',
     icon: GithubLogo,
+  },
+  {
+    link: 'https://github.com/patrikhellberg/hellberg.io',
+    text: 'Source',
+    icon: GitBranch,
   },
 ]
