@@ -9,24 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hellberg/react-svg-icons": "^1.1.2",
-    "next": "14.0.2",
-    "pdfkit": "^0.14.0",
+    "@bm-js/atlas-analytics": "^1.5.48",
+    "@hellberg/react-svg-icons": "^1.1.7",
+    "next": "^14.2.2",
+    "pdfkit": "^0.15.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@netlify/functions": "^2.4.0",
-    "@types/node": "^20",
-    "@types/pdfkit": "^0.13.3",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.2",
+    "@netlify/functions": "^2.6.0",
+    "@types/node": "^20.12.7",
+    "@types/pdfkit": "^0.13.4",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.2",
     "netlify-cli": "^17.7.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   }
 }
