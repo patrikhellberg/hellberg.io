@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bm-js/atlas-analytics": "^1.5.48",
+    "@bm-js/atlas-analytics": "^1.6.2",
     "@hellberg/react-svg-icons": "^1.1.7",
     "next": "^14.2.2",
     "pdfkit": "^0.15.0",
