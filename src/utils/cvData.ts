@@ -9,6 +9,29 @@ import {
 
 export const experiences: Experience[] = [
   {
+    title: 'Software Engineer',
+    company: 'Natural Cycles',
+    description:
+      'Working as a software engineer in the growth and aquisition team, optimizing signup and onboarding flows in the Natural Cycles app.',
+    start: {
+      year: 2024,
+      month: 3,
+    },
+    end: 'current',
+    skills: [
+      'TypeScript',
+      'Angular',
+      'Swift',
+      'Capacitor',
+      'Ionic Framework',
+      'Playwright',
+      'NodeJS',
+      'ExpressJS',
+      'AB testing',
+      'In-app purchases',
+    ],
+  },
+  {
     title: 'Frontend developer',
     company: 'SGDS Gruppen AB',
     description:
@@ -73,12 +96,7 @@ export const education: Education[] = [
     year: 2023,
   },
   {
-    title: 'Web development 1',
-    institution: 'Stockholms University',
-    year: 2022,
-  },
-  {
-    title: 'Web development 2',
+    title: 'Web development 1 & 2',
     institution: 'Stockholms University',
     year: 2022,
   },

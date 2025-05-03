@@ -43,7 +43,7 @@ const CVSection = () => {
               </span>
             ))}
           </div>
-          <p className='italic mt-4'>References provided on request</p>
+          {/* <p className='italic mt-4'>References provided on request</p> */}
         </div>
       ))}
       <h2 className={`${h2} mb-2`}>Education</h2>
@@ -68,7 +68,7 @@ const CVSection = () => {
               </span>
             ))}
           </div>
-          <p className='italic'>Certification provided on request</p>
+          {/* <p className='italic'>Certification provided on request</p> */}
         </div>
       ))}
     </div>

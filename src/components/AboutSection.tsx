@@ -12,8 +12,8 @@ const AboutSection = () => {
         Hello. I&apos;m a {yearsSinceDate('1996-06-17')}-year-old web developer
         from Sweden. I&apos;ve been working in development for{' '}
         {yearsSinceDate('2020-01-01')} years, in roles as a full-stack and
-        frontend developer. JavaScript, TypeScript, React, Vue, NodeJS, and
-        MongoDB are some of my go-to tools for crafting great digital
+        frontend developer. JavaScript, TypeScript, React, Vue, Angular, NodeJS,
+        and MongoDB are some of my go-to tools for crafting great digital
         experiences.
       </p>
       <p className='mb-2'>
