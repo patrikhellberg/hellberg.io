@@ -12,7 +12,7 @@
     "@bm-js/atlas-analytics": "^1.6.5",
     "@hellberg/react-svg-icons": "^1.1.7",
     "@tailwindcss/postcss": "^4.1.5",
-    "next": "15.3.6",
+    "next": "15.5.9",
     "pdfkit": "^0.17.1",
     "postcss": "^8.5.3"
   },
