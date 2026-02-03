@@ -3,7 +3,7 @@ import { cvLink } from '@/utils/config'
 import { h1, h2, h3 } from '@/utils/sharedStyles'
 import { dateString } from '@/utils/date'
 import { education, experiences } from '@/utils/cvData'
-import SVG, { Check } from '@hellberg/react-svg-icons'
+import { Check } from 'lucide-react'
 
 const CVSection = () => {
   return (
@@ -38,7 +38,7 @@ const CVSection = () => {
                 key={`skill_${skill}_${experience.title}`}
                 className='flex gap-px items-center text-sm'
               >
-                <SVG icon={Check} width={12} />
+                <Check width={12} />
                 {skill}
               </span>
             ))}
@@ -63,7 +63,7 @@ const CVSection = () => {
                 key={`skill_${skill}_${edu.title}`}
                 className='flex gap-1 items-center'
               >
-                <SVG icon={Check} width={16} />
+                <Check width={16} />
                 {skill}
               </span>
             ))}

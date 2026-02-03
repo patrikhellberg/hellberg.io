@@ -1,4 +1,4 @@
-import { SVGData } from '@hellberg/react-svg-icons'
+import { LucideIcon } from 'lucide-react'
 
 export type YearMonth =
   | {
@@ -29,5 +29,5 @@ export type IconName = 'check' | 'linkedin' | 'github' | 'email' | 'phone'
 export type ContactItem = {
   link: string
   text: string
-  icon: SVGData
+  icon: LucideIcon
 }

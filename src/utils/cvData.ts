@@ -1,11 +1,5 @@
 import type { Experience, Education, ContactItem } from '@/types'
-import {
-  EnvelopeSimple,
-  GitBranch,
-  GithubLogo,
-  LinkedinLogo,
-  Phone,
-} from '@hellberg/react-svg-icons'
+import { GitBranch, Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export const experiences: Experience[] = [
   {
@@ -121,7 +115,7 @@ export const contactItems: ContactItem[] = [
   {
     link: 'mailto:patrik@hellberg.io',
     text: 'patrik@hellberg.io',
-    icon: EnvelopeSimple,
+    icon: Mail,
   },
   {
     link: 'tel:+46761181414',
@@ -131,12 +125,12 @@ export const contactItems: ContactItem[] = [
   {
     link: 'https://www.linkedin.com/in/patrik-hellberg-56133020b/',
     text: 'LinkedIn',
-    icon: LinkedinLogo,
+    icon: Linkedin,
   },
   {
     link: 'https://github.com/patrikhellberg',
     text: 'Github',
-    icon: GithubLogo,
+    icon: Github,
   },
   {
     link: 'https://github.com/patrikhellberg/hellberg.io',
