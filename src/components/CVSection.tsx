@@ -16,7 +16,7 @@ const CVSection = () => {
           rel='noopener noreferrer'
           className='underline ml-2'
         >
-          Download as PDF
+          View as PDF
         </a>
       </div>
       <h2 className={`${h2} mb-2`}>Experience</h2>
