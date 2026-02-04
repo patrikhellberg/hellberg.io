@@ -36,7 +36,7 @@ function createPdf(): Promise<void> {
     doc
       .font('Helvetica-Bold')
       .fontSize(22)
-      .text('CV - Patrik Hellberg Ramel', 230)
+      .text('CV - Patrik Hellberg Ramel!', 230)
     doc.moveDown(0.5)
     doc.font('Helvetica').fontSize(18).text('Contact information')
     doc.moveDown(0.3)
