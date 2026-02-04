@@ -19,7 +19,7 @@ runScript(async () => {
 function createPdf(): Promise<void> {
   return new Promise((resolve, reject) => {
     const filteredContactItems = contactItems.filter(
-      (item) => item.text !== 'Source'
+      (item) => item.text !== 'Source',
     )
 
     const doc = new PDFKit()
@@ -36,7 +36,7 @@ function createPdf(): Promise<void> {
     doc
       .font('Helvetica-Bold')
       .fontSize(22)
-      .text('CV - Patrik Hellberg Ramel', 230)
+      .text('CV - Patrik Hellberg Ramel!', 230)
     doc.moveDown(0.5)
     doc.font('Helvetica').fontSize(18).text('Contact information')
     doc.moveDown(0.3)
@@ -67,8 +67,8 @@ function createPdf(): Promise<void> {
         .fontSize(14)
         .text(
           `${exp.title} - ${exp.company}, ${dateString(
-            exp.start
-          )} - ${dateString(exp.end)}`
+            exp.start,
+          )} - ${dateString(exp.end)}`,
         )
       doc.moveDown(0.3)
       doc.fontSize(12).text(exp.description)
