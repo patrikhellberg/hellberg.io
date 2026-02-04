@@ -123,7 +123,7 @@ export const contactItems: ContactItem[] = [
     icon: Phone,
   },
   {
-    link: 'https://www.linkedin.com/in/patrik-hellberg-56133020b/',
+    link: 'https://www.linkedin.com/in/patrik-hellberg-ramel-56133020b',
     text: 'LinkedIn',
     icon: Linkedin,
   },

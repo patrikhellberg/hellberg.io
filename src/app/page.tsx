@@ -15,9 +15,9 @@ export default function Home() {
         >
           <Link href='/'>
             <h1 className='font-bold text-lg hidden sm:inline'>
-              Patrik Hellberg
+              Patrik Hellberg Ramel
             </h1>
-            <h1 className='font-bold text-lg sm:hidden'>PH</h1>
+            <h1 className='font-bold text-lg sm:hidden'>PHR</h1>
           </Link>
           <div className='flex gap-4'>
             {headerLinks.map((link) => (
