@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-cv-pdf": "tsx script/generateCvPdf.ts"
+    "generate-cv-pdf": "tsx script/generateCvPdf.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
@@ -28,6 +29,7 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16",
+    "husky": "^9.1.7",
     "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
