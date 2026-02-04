@@ -10,6 +10,7 @@ import type { LinksFunction, MetaFunction } from 'react-router'
 import './globals.css'
 
 export const links: LinksFunction = () => [
+  { rel: 'icon', href: '/favicon.ico' },
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   {
     rel: 'preconnect',
