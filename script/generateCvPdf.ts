@@ -1,9 +1,9 @@
 import { runScript } from '@naturalcycles/nodejs-lib/runScript'
 import { fs2 } from '@naturalcycles/nodejs-lib/fs2'
 import PDFKit from 'pdfkit'
-import { cvLink } from '../src/utils/config.js'
-import { experiences, education, contactItems } from '../src/utils/cvData.js'
-import { dateString } from '../src/utils/date.js'
+import { cvLink } from '../app/utils/config.js'
+import { experiences, education, contactItems } from '../app/utils/cvData.js'
+import { dateString } from '../app/utils/date.js'
 
 /**
  pnpm generate-cv-pdf

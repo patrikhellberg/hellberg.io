@@ -1,4 +1,4 @@
-import type { YearMonth } from '@/types'
+import type { YearMonth } from '~/types'
 
 export const months = [
   'january',

@@ -7,7 +7,7 @@ type Props = {
 const AnchorHeader = ({ id, text, classes }: Props) => {
   return (
     <>
-      <div id={id} className='relative -top-20'></div>
+      <div id={id} className="relative -top-20"></div>
       <h1 className={classes ? classes : ''}>{text}</h1>
     </>
   )

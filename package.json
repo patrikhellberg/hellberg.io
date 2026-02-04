@@ -3,36 +3,40 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "functions": "netlify functions:serve",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "lint": "eslint .",
     "generate-cv-pdf": "tsx script/generateCvPdf.ts",
     "prepare": "husky"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
+    "@react-router/node": "^7.1.0",
+    "@react-router/serve": "^7.1.0",
+    "isbot": "^5.1.17",
     "lucide-react": "^0.563.0",
-    "next": "^16",
-    "pdfkit": "^0.17.2",
-    "postcss": "^8.5.6"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.0"
   },
   "engines": {
     "node": "24"
   },
   "devDependencies": {
     "@naturalcycles/nodejs-lib": "^15.90.2",
+    "@react-router/dev": "^7.1.0",
+    "@tailwindcss/vite": "^4.1.0",
     "@types/node": "^24",
-    "@types/pdfkit": "^0.17.4",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
-    "eslint-config-next": "^16",
     "husky": "^9.1.7",
+    "pdfkit": "^0.17.2",
+    "@types/pdfkit": "^0.17.4",
     "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^6.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

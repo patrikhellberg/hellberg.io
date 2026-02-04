@@ -1,4 +1,4 @@
-import type { Experience, Education, ContactItem } from '@/types'
+import type { Experience, Education, ContactItem } from '~/types'
 import { GitBranch, Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export const experiences: Experience[] = [
@@ -99,15 +99,15 @@ export const education: Education[] = [
 export const headerLinks = [
   {
     text: 'About',
-    href: '/#about',
+    href: '#about',
   },
   {
     text: 'CV',
-    href: '/#cv',
+    href: '#cv',
   },
   {
     text: 'Contact',
-    href: '/#contact',
+    href: '#contact',
   },
 ]
 

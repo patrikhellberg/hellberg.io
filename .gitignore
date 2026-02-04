@@ -1,11 +1,9 @@
 /node_modules
-/.next/
-/out/
 /build
+/.react-router/
 .DS_Store
 .env*.local
-next-env.d.ts
+.env
 
 .netlify/
 todo.md
-.env
