@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'src/utils/cvData.ts'
+      - 'src/utils/config.ts'
+      - 'script/generateCvPdf.ts'
+      - 'public/portrait-tall.jpeg'
+
+permissions:
+  contents: write
 
 jobs:
   generate-cv:
@@ -35,5 +43,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "public/CV Patrik Hellberg Ramel.pdf"
-          git diff --staged --quiet || git commit -m "chore: regenerate CV PDF"
+          git diff --staged --quiet || git commit -m "chore: regenerate CV PDF [skip ci]"
           git push
