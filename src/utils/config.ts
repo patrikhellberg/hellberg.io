@@ -1,1 +1,1 @@
-export const cvLink = `/CV Patrik Hellberg Ramel.pdf ${new Date().getFullYear()}`
+export const cvLink = `/CV Patrik Hellberg Ramel.pdf ${new Date().getFullYear()}.pdf`

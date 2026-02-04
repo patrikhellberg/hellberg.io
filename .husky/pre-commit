@@ -1,2 +1,2 @@
 pnpm generate-cv-pdf
-git add "public/CV Patrik Hellberg Ramel.pdf"
+git add "public/*.pdf"
