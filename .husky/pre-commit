@@ -1,2 +1,0 @@
-pnpm generate-cv-pdf
-git add "public/*.pdf"

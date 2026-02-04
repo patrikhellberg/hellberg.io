@@ -4,11 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "react-router build",
+    "build": "pnpm generate-cv-pdf && react-router build",
     "start": "react-router-serve ./build/server/index.js",
     "lint": "eslint .",
-    "generate-cv-pdf": "tsx script/generateCvPdf.ts",
-    "prepare": "husky"
+    "generate-cv-pdf": "tsx script/generateCvPdf.ts"
   },
   "dependencies": {
     "@react-router/node": "^7.1.0",
@@ -30,7 +29,6 @@
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
-    "husky": "^9.1.7",
     "pdfkit": "^0.17.2",
     "@types/pdfkit": "^0.17.4",
     "tailwindcss": "^4.1.18",
