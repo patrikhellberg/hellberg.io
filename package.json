@@ -5,13 +5,11 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "pnpm generate-cv-pdf && react-router build",
-    "start": "react-router-serve ./build/server/index.js",
     "lint": "eslint .",
     "generate-cv-pdf": "tsx script/generateCvPdf.ts"
   },
   "dependencies": {
     "@react-router/node": "^7.1.0",
-    "@react-router/serve": "^7.1.0",
     "isbot": "^5.1.17",
     "lucide-react": "^0.563.0",
     "react": "^19.0.0",
