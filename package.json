@@ -5,13 +5,11 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "pnpm generate-cv-pdf && react-router build",
-    "start": "react-router-serve ./build/server/index.js",
     "lint": "eslint .",
     "generate-cv-pdf": "tsx script/generateCvPdf.ts"
   },
   "dependencies": {
     "@react-router/node": "^7.1.0",
-    "@react-router/serve": "^7.1.0",
     "isbot": "^5.1.17",
     "lucide-react": "^0.563.0",
     "react": "^19.0.0",
@@ -22,30 +20,21 @@
     "node": "24"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@naturalcycles/nodejs-lib": "^15.90.2",
     "@react-router/dev": "^7.1.0",
     "@tailwindcss/vite": "^4.1.0",
     "@types/node": "^24",
+    "@types/pdfkit": "^0.17.4",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
     "pdfkit": "^0.17.2",
-    "@types/pdfkit": "^0.17.4",
     "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.73.0",
     "vite": "^6.0.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp",
-      "unrs-resolver"
-    ],
-    "ignoredBuiltDependencies": [
-      "netlify-cli",
-      "unix-dgram"
-    ]
-  }
+  "packageManager": "pnpm@12.15.0"
 }
