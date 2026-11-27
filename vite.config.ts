@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [tailwindcss(), reactRouter()],
   resolve: {
     alias: {
-      '~': resolve(__dirname, 'app'),
+      '~': resolve(import.meta.dirname, 'app'),
     },
   },
 })
