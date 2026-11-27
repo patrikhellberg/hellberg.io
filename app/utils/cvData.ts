@@ -1,5 +1,6 @@
 import type { Experience, Education, ContactItem } from '~/types'
-import { GitBranch, Github, Linkedin, Mail, Phone } from 'lucide-react'
+import { GitBranch, Mail, Phone } from 'lucide-react'
+import { Github, Linkedin } from '~/utils/brandIcons'
 
 export const experiences: Experience[] = [
   {
